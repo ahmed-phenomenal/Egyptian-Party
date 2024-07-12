@@ -1,0 +1,164 @@
+/*Global Rules*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Assistant", sans-serif;
+    height: 3000px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+/*home*/
+.home{
+    background:linear-gradient(rgba(239, 71, 71, 0.6), rgba(239, 71, 71, 0.6)),url("../IMG/events-heavenly-header.jpg");
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.home .text h1{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 72px;
+}
+.home .text span{
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: -10%;
+}
+.home .bar{
+    top: 0;
+    font-size: 30px;
+    line-height: 45px;
+    height: 100%;
+    transition: .5s;
+}
+.home .bar:hover{
+    cursor: pointer;
+}
+.home .bar .links{
+    background-color: rgb(0 0 0 / 70%);
+    height: 100%;
+    transition: .5s;
+    left: -106.6px;
+}
+.home .bar .links .link{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    transition: 1s;
+}
+.home .bar .links .link:hover{
+color:
+rgba(214, 46, 51, 0.4);
+}
+.home .bar .links .btnclose{
+    font-size: 20px;
+    transition: 1s;
+}
+.home .bar .links .btnclose:hover{color:rgba(214, 46, 51, 0.4) ;}
+
+/*details*/
+.details{
+    margin: 100px 0;
+}
+.details .contain .title h2{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    background-color: #E68285;
+    padding: 10px 20px;
+}
+.details .contain .title h2:hover{
+    cursor: pointer;
+}
+.details .contain .title p{
+    background-color:#CCCCCC ;
+    padding: 10px 20px;
+}
+
+/*duration*/
+.duration{
+    margin: 100px 0;
+    background:linear-gradient(rgba(239, 71, 71, 0.6), rgba(239, 71, 71, 0.6)),url("../IMG/invitation-2508607__340.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
+.duration .text{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+    border: 1.5px solid white;
+    padding: 40px 80px;
+}
+
+/*contact*/
+.contact{
+    margin: 0 0;
+}
+.contact h2{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #444444;
+}
+.contact .row h3{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 900;
+}
+.contact .row .icons i{
+    border: 1px solid #777777;
+    color: #777777;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    width: 40px;
+}
+.contact .row .icons i:hover{
+    background-color: #d62e33;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.form-control{
+    border-radius: 0;
+}
+textarea{
+    height: 200px;
+}
+.contact .row button{
+    background-color: #d62e33;
+    padding: 15px 30px;
+    border: 1px solid #d62e33;
+}
+.contact .row button a{
+    color: white;
+    text-decoration: none;
+}
+
+/*different medias*/
+@media (max-width:992px) {
+    .details .title h2 , .details .title p{
+        width: 100% !important;
+    }
+}
+@media (max-width:750px) {
+    .home .text{
+        top: 30% !important;
+    }
+    .home .text span{
+        top: -7%;
+        left: 17% !important;
+    }
+}
